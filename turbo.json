@@ -1,0 +1,17 @@
+{
+  "pipeline": {
+    "dev": {
+      "cache": false
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [
+        ".next/**",
+        "dist/**"
+      ]
+    },
+    "storybook": {
+      "cache": false
+    }
+  }
+}
